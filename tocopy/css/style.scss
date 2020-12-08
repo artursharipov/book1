@@ -34,6 +34,14 @@ h6{
     @include adaptiv-font(16, 12);
     margin: 0;
 }
+main{
+    h1, h2, h3, h4, h5, h6{
+        margin-bottom: 20px;
+    }
+}
+img{
+    max-width: 100%;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -92,7 +100,8 @@ header{
 .burger, 
 #show-lists-mobile,
 .close,
-.title-nav{
+.title-nav,
+.none{
     display: none;
 }
 
@@ -127,41 +136,46 @@ main{
     line-height: 1.5em;
 }
 #list{
-    line-height: 1.5em;
-    &, ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    ul{
-        margin-left: 20px;
-    }
-    a{
-        color: #000;
-        text-decoration: none;
-    }
-    li li{
-        margin: 0.1em 0;
-        a{
-            color: #666;
+    &>ul{
+        line-height: 1.5em;
+        &, ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-    }
-    &>li{
-        margin: 0.6em 0;
-        a{
-            font-size: 16px;
+        ul{
+            margin-left: 20px;
         }
-    }
-    .no{
-        visibility: hidden;
-        height: 0;
-        margin: 0;
-    }
-    .yes{
-        visibility: visible;
         a{
-            display: block;
-            margin: 10px 0;
+            color: #000;
+            text-decoration: none;
+        }
+        li li{
+            margin: 0.1em 0;
+            a{
+                color: #666;
+            }
+        }
+        &>li{
+            margin: 0.6em 0;
+            a{
+                font-size: 16px;
+            }
+        }
+        .no{
+            // visibility: hidden;
+            // line-height: 0;
+            // margin: 0;
+            &>a{
+                color: #ccc;
+            }
+        }
+        .yes{
+            // visibility: visible;
+            a{
+                display: block;
+                margin: 10px 0;
+            }
         }
     }
 }

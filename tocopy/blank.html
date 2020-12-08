@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="%Keywords%" /> 
+    <meta name="description" content="%Description%" />
+    <title>%WindowTitle%</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="bootstrap-grid.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <a href="" class="logo">
+                <img class="logo__img" src="https://archive74.ru/sites/default/files/logo.png" alt="">
+                <div class="logo__text">
+                    <div class="logo__name">
+
+                        %SiteTitle%
+
+                    </div>
+                    <div class="logo__subname">
+                        
+                        %Подзаголовок%
+                    
+                    </div>
+                </div>
+            </a>
+            
+            <button class="btn" id="show-lists-mobile">Содержание</button>
+            
+            <div class="nav-container">
+                <div class="burger" id="burger">
+                    <span class="burger__icon"></span>
+                </div>
+    
+                <nav id="nav">
+                    <div class="menu-container">
+                        <div class="close-container">
+                            <span class="title-nav">Меню</span>
+                            <span id="close-menu" class="close">✖</span>
+                        </div>
+                        <ul class="menu" id="menu">
+
+                            %MainMenu%
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <aside class="aside">
+            <div class="aside__container">
+
+                <div class="aside__header">
+
+                    <div class="aside__title-container">
+                        <div class="aside__title">Содержание</div>
+                        <div class="aside__close close" id="close-aside">✖</div>
+                    </div>
+
+                    <input class="input-text" id="filter" type="text" placeholder="Поиск по содержанию">
+
+                </div>
+
+                <div class="aside__body">
+
+                    <div id="list">
+                        <ul>
+                            <li><a href="">Пункт меню 1</a></li>
+                            <li><a href="">Пункт меню 2</a></li>
+                            <li>
+                                <a href="">Пункт меню 3</a>
+                                <ul>
+                                    <li><a href="">страница 1</a></li>
+                                    <li>
+                                        <a href="">страница 2</a>
+                                        <ul>
+                                            <li><a href="">страница 1</a></li>
+                                            <li><a href="">страница 2</a></li>
+                                            <li><a href="">страница 3</a></li>
+                                            <li><a href="">страница 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">страница 3</a></li>
+                                    <li><a href="">страница 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Пункт меню 4</a></li>
+                            <li><a href="">Пункт меню 5</a></li>
+                            <li><a href="">Пункт меню 6</a></li>
+                            <li><a href="">Пункт меню 7</a></li>
+                            <li><a href="">Пункт меню 8</a></li>
+                            <li><a href="">Пункт меню 9</a></li>
+                            <li><a href="">Пункт меню 10</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </aside>
+
+        <main>
+            <h1>
+
+                %PageTitle%
+            
+            </h1>
+            
+            %PageContent%
+
+            <a class="none" href="http://brullworfel.ru/turbosite">TurboSite</a>
+            
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

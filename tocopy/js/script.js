@@ -3,7 +3,7 @@ document.getElementById("filter").addEventListener('keyup', function(){
     var filter, ul, li, a, i, txtValue;
 
     filter = this.value.toUpperCase();
-    ul = document.getElementById("list");
+    ul = document.querySelector("#list > ul");
     li = ul.getElementsByTagName('li');
     
     for (i = 0; i < li.length; i++) {

@@ -38,6 +38,14 @@ h6 {
   margin: 0;
 }
 
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,7 +127,8 @@ header {
 .burger,
 #show-lists-mobile,
 .close,
-.title-nav {
+.title-nav,
+.none {
   display: none;
 }
 
@@ -162,52 +171,46 @@ main {
   line-height: 1.5em;
 }
 
-#list {
+#list > ul {
   line-height: 1.5em;
 }
 
-#list, #list ul {
+#list > ul, #list > ul ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#list ul {
+#list > ul ul {
   margin-left: 20px;
 }
 
-#list a {
+#list > ul a {
   color: #000;
   text-decoration: none;
 }
 
-#list li li {
+#list > ul li li {
   margin: 0.1em 0;
 }
 
-#list li li a {
+#list > ul li li a {
   color: #666;
 }
 
-#list > li {
+#list > ul > li {
   margin: 0.6em 0;
 }
 
-#list > li a {
+#list > ul > li a {
   font-size: 16px;
 }
 
-#list .no {
-  visibility: hidden;
-  height: 0;
-  margin: 0;
+#list > ul .no > a {
+  color: #ccc;
 }
 
-#list .yes {
-  visibility: visible;
-}
-
-#list .yes a {
+#list > ul .yes a {
   display: block;
   margin: 10px 0;
 }
