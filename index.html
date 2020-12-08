@@ -7,36 +7,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
     <!-- <link rel="stylesheet" href="bootstrap-grid.min.css"> -->
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
 
         <header>
-            <div class="logo">
+            <a href="" class="logo">
                 <img class="logo__img" src="https://archive74.ru/sites/default/files/logo.png" alt="">
                 <div class="logo__text">
                     <div class="logo__name">ГУ ОГАЧО ЧЕЛЯБИНСК</div>
                     <div class="logo__subname">ГУ ОГАЧО ЧЕЛЯБИНСК</div>
                 </div>
-            </div>
+            </a>
             
-            <button id="show-lists-mobile">Содержание</button>
+            <button class="btn" id="show-lists-mobile">Содержание</button>
             
-            <div class="burger" id="burger">
-                <span class="burger__icon"></span>
+            <div class="nav-container">
+                <div class="burger" id="burger">
+                    <span class="burger__icon"></span>
+                </div>
+    
+                <nav id="nav">
+                    <div class="menu-container">
+                        <div class="close-container">
+                            <span class="title-nav">Меню</span>
+                            <span id="close-menu" class="close">✖</span>
+                        </div>
+                        <ul class="menu" id="menu">
+                            <li><a href="">Item 1</a></li>
+                            <li><a href="">Item 1</a></li>
+                            <li><a href="">Item 1</a></li>
+                            <li><a href="">Item 1</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-
-            <nav id="menu-container">
-                <span id="close-menu" class="close">✖</span>
-                <ul id="menu">
-                    <li><a href="">Item 1</a></li>
-                    <li><a href="">Item 1</a></li>
-                    <li><a href="">Item 1</a></li>
-                    <li><a href="">Item 1</a></li>
-                </ul>
-            </nav>
         </header>
 
         <aside class="aside">
@@ -50,11 +57,12 @@
                     </div>
 
                     <input class="input-text" id="filter" type="text" placeholder="Поиск по содержанию">
-                    
+
                 </div>
 
                 <div class="aside__body">
-                    <ul id="lists">
+
+                    <ul id="list">
                         <li><a href="">Пункт меню 1</a></li>
                         <li><a href="">Пункт меню 2</a></li>
                         <li>

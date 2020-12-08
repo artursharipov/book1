@@ -3,7 +3,7 @@ document.getElementById("filter").addEventListener('keyup', function(){
     var filter, ul, li, a, i, txtValue;
 
     filter = this.value.toUpperCase();
-    ul = document.getElementById("lists");
+    ul = document.getElementById("list");
     li = ul.getElementsByTagName('li');
     
     for (i = 0; i < li.length; i++) {
@@ -29,20 +29,20 @@ document.getElementById("filter").addEventListener('keyup', function(){
 
 document.getElementById('burger').addEventListener('click', function(){
   document.querySelector('aside').classList.remove('active')
-  document.getElementById('menu-container').classList.toggle('active')
+  document.getElementById('nav').classList.toggle('active')
 })
 
 document.getElementById('show-lists-mobile').addEventListener('click', function(){
-  document.getElementById('menu-container').classList.remove('active')
+  document.getElementById('nav').classList.remove('active')
   document.querySelector('aside').classList.toggle('active')  
 })
 
 document.getElementById('close-menu').addEventListener('click', function(){
-  document.getElementById('menu-container').classList.remove('active')
+  document.getElementById('nav').classList.remove('active')
 })
 
 document.getElementById('close-menu').addEventListener('click', function(){
-  document.getElementById('menu-container').classList.remove('active')
+  document.getElementById('nav').classList.remove('active')
 })
 document.getElementById('close-aside').addEventListener('click', function(){
   document.querySelector('aside').classList.remove('active')
